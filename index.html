@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete Laravel Documentation</title>
-    <link rel="icon" type="image/png" href="OIP.jpeg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,7 +14,7 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <img src="OIP.jpeg" alt="Laravel Logo" class="h-10 w-10">
+                    <img src="assest/OIP.jpeg" alt="Laravel Logo" class="h-10 w-10">
                     <span class="ml-2 text-xl font-semibold text-red-600">Laravel Bdarija</span>
                 </div>
                 <div class="hidden md:flex space-x-6">
@@ -46,7 +45,7 @@
         <!-- Introduction Section -->
         <section id="introduction" class="mb-16">
             <div class="bg-white rounded-lg shadow-md p-8">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6">Mo9adima 3la Laravel</h2>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Moqadima 3la Laravel</h2>
                 
                 <!-- What is Laravel -->
                 <div class="mb-8">
@@ -110,7 +109,7 @@ php artisan serve (labghiti tkhdem l projet)</code></pre>
                     <div class="space-y-6">
                         <div class="bg-red-50 p-6 rounded-lg">
                             <h3 class="text-xl font-semibold text-gray-800 mb-3">📁 app/</h3>
-                            <p class="text-gray-600 mb-4">Directory dial core application kaytkawn mn:</p>
+                            <p class="text-gray-600 mb-4">Directory dial core applicationkaytkawn mn:</p>
                             <ul class="space-y-3">
                                 <li class="flex items-start">
                                     <span class="text-red-600 mr-2">►</span>
@@ -204,7 +203,7 @@ php artisan serve (labghiti tkhdem l projet)</code></pre>
                                     <span class="text-green-600 mr-2">►</span>
                                     <div>
                                         <span class="font-medium">seeders/</span>
-                                        <p class="text-sm text-gray-600">Database seeder classes(hna kandiro data lmohima ,had data darori khassha tkon bach tkhdem lapp)</p>
+                                        <p class="text-sm text-gray-600">Database seeder classes(hna kandiro data lmohima ,had data dorirti khassha tkon bach tkhdem lapp)</p>
                                     </div>
                                 </li>
                             </ul>
@@ -1287,11 +1286,132 @@ class Post extends Model
                 </div>
             </div>
         </section>
-
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-3xl font-bold text-gray-800 mb-8">Laravel Design Patterns</h1>
+            
+            <div class="overflow-x-auto bg-white rounded-lg shadow">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pattern</th>
+                            <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
+                            <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Use Case</th>
+                            <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="font-medium text-gray-900">MVC Pattern</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Separates application logic into Model (data), View (presentation), and Controller (logic)</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Basic application structure and organization</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <code class="text-sm text-purple-600">app/Http/Controllers, app/Models, resources/views</code>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="font-medium text-gray-900">Repository Pattern</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Abstracts data persistence logic from business logic</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Complex database operations and query logic</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <code class="text-sm text-purple-600">app/Repositories/UserRepository</code>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="font-medium text-gray-900">Service Pattern</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Encapsulates business logic in dedicated service classes</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Complex business operations and third-party integrations</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <code class="text-sm text-purple-600">app/Services/PaymentService</code>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="font-medium text-gray-900">Factory Pattern</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Creates objects without exposing creation logic</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Database seeding and testing</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <code class="text-sm text-purple-600">database/factories/UserFactory</code>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="font-medium text-gray-900">Observer Pattern</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Allows objects to watch and react to events</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Model events and notifications</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <code class="text-sm text-purple-600">app/Observers/UserObserver</code>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="font-medium text-gray-900">Provider Pattern</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Bootstraps and configures application services</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Service registration and configuration</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <code class="text-sm text-purple-600">app/Providers/AppServiceProvider</code>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="font-medium text-gray-900">Facade Pattern</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Provides simplified interface to complex subsystems</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-600">Static interface to core Laravel services</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <code class="text-sm text-purple-600">Cache::get(), DB::table()</code>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </main>
 
     <div class="bg-red-500 p-6 border-b border-red-500">
-       <center><h2 class="text-2xl font-semibold text-white">ila 3andek chi so2al khalih <a href="https://tellonym.me/Brux.010101" class="text-black">Hnaaaa</a></h2></center> 
+       <center><h2 class="text-2xl font-semibold text-white">ila 3andek chi so2al khalih <a href="https://tellonym.me/user.46286472" class="text-black">Hnaaaa</a></h2></center> 
     </div>
 
     <!-- Footer -->
@@ -1299,12 +1419,7 @@ class Post extends Model
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center">
                 <p class="text-gray-400">Complete Laravel Documentation</p>
-                <p class="text-sm mt-2">
-    By 
-    <a href="https://www.linkedin.com/in/mohamed-bouchta-71082a286/" class="text-blue-500 hover:underline">Bouchta Mohamed</a> & 
-    <a href="https://www.linkedin.com/in/rida-chaanoun/" class="text-blue-500 hover:underline">Rida Chaanoun</a>
-</p>
-
+                <p class="text-sm mt-2">By Bouchta Mohamed</p>
             </div>
         </div>
     </footer>
