@@ -14,9 +14,10 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <img src="assest/OIP.jpeg" alt="Laravel Logo" class="h-10 w-10">
+                    <img src="laravel/OIP.jpeg" alt="Laravel Logo" class="h-10 w-10">
                     <span class="ml-2 text-xl font-semibold text-red-600">Laravel Bdarija</span>
                 </div>
+                <!-- Menu pour PC -->
                 <div class="hidden md:flex space-x-6">
                     <a href="#introduction" class="text-gray-700 hover:text-red-600">mo9adima</a>
                     <a href="#structure" class="text-gray-700 hover:text-red-600">Structure</a>
@@ -26,9 +27,46 @@
                     <a href="#advanced" class="text-gray-700 hover:text-red-600">Advanced</a>
                     <a href="#summary" class="text-gray-700 hover:text-red-600">khollasa</a>
                 </div>
+                <!-- Boutons pour PC -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="laravel/strecture.html">
+                        <button class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700">Laravel Folder Structure</button>
+                    </a>
+                    <a href="laravel/index.html">
+                        <button class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800">Laravel Lifecycle</button>
+                    </a>
+                </div>
+                <!-- Bouton menu mobile -->
+                <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none text-2xl">
+                    ☰
+                </button>
+            </div>
+            <!-- Menu mobile caché par défaut -->
+            <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 mt-4 bg-white shadow-md p-4">
+                <a href="#introduction" class="text-gray-700 hover:text-red-600">mo9adima</a>
+                <a href="#structure" class="text-gray-700 hover:text-red-600">Structure</a>
+                <a href="#concepts" class="text-gray-700 hover:text-red-600">mafahim assasiya</a>
+                <a href="#database" class="text-gray-700 hover:text-red-600">Database</a>
+                <a href="#security" class="text-gray-700 hover:text-red-600">Security</a>
+                <a href="#advanced" class="text-gray-700 hover:text-red-600">Advanced</a>
+                <a href="#summary" class="text-gray-700 hover:text-red-600">khollasa</a>
+                <!-- Boutons pour mobile -->
+                 <a href="laravel/strecture.html">
+                    <button class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700">Laravel Folder Structure</button>
+                 </a>
+                 <a href="laravel/index.html">
+                    <button class="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800">Laravel Lifecycle</button>
+                 </a>
             </div>
         </div>
     </nav>
+    
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+    
 
     <!-- Hero Section -->
     <header class="pt-24 pb-12 bg-gradient-to-r from-red-600 to-red-800">
