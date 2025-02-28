@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laravel Request Lifecycle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="container mx-auto px-4 py-8 max-w-6xl relative min-h-screen flex items-center justify-center">
+    <div class="text-center">
+      <h1 class="text-5xl font-bold text-gray-800 mb-8">Laravel Request Lifecycle</h1>
+      <h2 class="text-3xl font-semibold text-red-600 mb-12">A Visual Explanation</h2>
+      <p class="text-xl text-gray-600 mb-16">Understanding how Laravel handles requests from start to finish</p>
+      <div class="animate-bounce">
+        <button id="start-btn" class="bg-red-600 hover:bg-red-700 text-white text-xl px-8 py-4 rounded-lg shadow-lg transition">
+          Start Journey
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Redirect to the presentation page when the "Start" button is clicked
+    document.getElementById('start-btn').addEventListener('click', function() {
+      window.location.href = 'presentation.html';
+    });
+  </script>
+</body>
+</html>
